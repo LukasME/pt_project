@@ -1,0 +1,30 @@
+h1.top {
+    margin-top: 70px;
+}
+.black-bg {
+    background-color: #000000;
+}
+
+.container.top {
+    scroll-padding-top: 5px;
+}
+
+.container {
+    position: relative;
+}
+
+.bottom {
+    color: white;
+    font-weight: 300;
+    margin-top: 360px;
+}
+
+h1 {
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.5;
+    padding: 0 0px 0 0px;
+    font-weight: 500;
+}

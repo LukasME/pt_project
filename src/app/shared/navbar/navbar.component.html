@@ -1,0 +1,46 @@
+<nav class="app-navigation"  [ngClass]="!scrolledWindowHeight && isHome() ? 'transparent-grayscale-theme' : 'color-theme' ">
+    <div class="navbar-shadow">
+        <div class="navbar-inner">
+
+            <div id="navbar-content" class="container">
+                <!-- Logo -->
+                <div id="navbar-logo">
+                    <a class="navbar-brand pt-normal-element-margin-left" href="#">
+                        <img *ngIf="scrolledWindowHeight || !isHome()" src="assets/img/pt-logo.png" alt="PT Project">
+                        <img *ngIf="!scrolledWindowHeight && isHome()" src="assets/img/pt-logo-white.png" alt="PT Project">
+                    </a>
+                </div>
+
+                <!-- Menu options -->
+                <div *ngIf="!allowedSidebar" id="navbar-menu">
+                    <ul class="navbar-nav pt-normal-element-margin-right">
+                        <li *ngFor="let item of navigationConf.navigationItems" class="nav-item">
+                            <a [routerLink]="[item.urlPath]" class="nav-link">{{item.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div *ngIf="allowedSidebar" id="navbar-toggle">
+                    <div class="navigation-button unselected" (click)="toggleNavigation()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<aside *ngIf="allowedSidebar" id="navbar-sidebar" [ngClass]="{'closed' : !sidebarVisible && navbarAnimationsAllowed, 'open' : sidebarVisible, 'transparent-grayscale-theme' :  !scrolledWindowHeight && isHome(), 'color-theme' : scrolledWindowHeight || !isHome() }">
+    <div class="content container">
+        <div class="nav">
+            <ul class="navigation-links">
+                <li *ngFor="let item of navigationConf.navigationItems" class="nav-item">
+                    <a [routerLink]="[item.urlPath]" (click)="toggleNavigation()" class="nav-link">{{item.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+   

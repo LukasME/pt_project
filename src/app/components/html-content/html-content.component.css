@@ -1,0 +1,10 @@
+/* Override paper kit*/
+.image-container {
+    box-shadow: none !important;
+    border-radius: 0.15em !important;
+}
+
+p.blockquote {
+    position: unset !important;
+    margin: 15px auto;
+}

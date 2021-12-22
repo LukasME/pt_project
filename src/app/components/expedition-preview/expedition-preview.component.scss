@@ -1,0 +1,52 @@
+h1 {
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.5;
+    padding: 0 0px 0 0px;
+    font-weight: 500;
+    font-size: 46px;
+}
+
+h2 {
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1.5;
+    padding: 0 0px 0 0px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+button.expedition-more {
+    margin: 0 auto;
+}
+
+#component-wrap {
+    margin-bottom: 20px;
+    
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.expedition-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .img-parallax {
+        position: relative;
+    }
+
+    .header-content {
+        position: absolute;
+        bottom: 5vh;
+
+    }
+}

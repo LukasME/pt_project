@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    --base-color: rgb(209, 100, 11);
+    --pt-orange: rgb(209, 100, 11);
+    --grayscale-navbar-background-color: rgba(0, 0, 0, 0.5);
+    --grayscale-navbar-menu-background-color: rgba(0, 0, 0, 0.9);
+    --color-navbar-menu-background-color: rgba(255, 255, 255, 0.9);
+    --base-text-color: rgb(255, 255, 255);
+    --navigation-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+    --map-highlight: rgb(209, 100, 11);
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.black-bg {
+    background-color: #000000;
+}
+
+.image-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Parallax with pure css */
+.parallax {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+   
+.img-parallax {
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+
+/* PT specific*/
+.pt-normal-element-margin-left {
+    margin-left: 10px;
+}
+
+.pt-normal-element-margin-right {
+    margin-right: 10px;
+}
+
+

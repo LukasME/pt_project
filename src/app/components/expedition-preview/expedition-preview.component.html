@@ -1,0 +1,22 @@
+<div class="component-wrap">
+    <div class="expedition-header">
+        <div id="parallax" class="img-parallax" style="background-image: url({{expedition.previewPhotoUrls[0]}})">
+        </div>
+        <div class="header-content container">
+            <h1 class="top black-bg">{{expedition.title}}</h1>
+            <br>
+            <h2 class="black-bg">{{datepipe.transform(expedition.dateFrom, 'dd.MM')}} - {{datepipe.transform(expedition.dateTo, 'dd.MM')}}</h2>
+        </div>
+    </div>
+
+    <!-- Zobrat prve dva paragrafy a useknut ich zospodu cez fade-->
+    <div class="introductory-paragraphs">
+        <p *ngFor=""></p>
+        <div class="bottom-fade"></div>
+    </div>
+    <!--app-html-content [html]="expedition.contentHTML"></app-html-content-->
+
+    <div class="container button-container">
+        <button class="btn btn-neutral expedition-more" (click)="goToExpedition()">Pozri viac</button>
+    </div>
+</div>
